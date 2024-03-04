@@ -3,44 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="Order Summary Card Component challenge from Frontend Mentor"
+    />
 
+    <!-- IMAGES -->
+    <link
+      rel="preload"
+      href="./assets/images/pattern-background-mobile.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/pattern-background-desktop.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/illustration-hero.svg"
+      as="image"
+    />
+
+    <!-- FAVICON -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
 
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="./css/output.css" />
 
-    <title>Frontend Mentor | Order summary card</title>
+    <title>Order summary card</title>
   </head>
-  <body>
-    <main>
-      <div class=""></div>
-      
-      <section>
-        <h1>Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
-        <div>
-          <p>Annual Plan</p>
-          <p>$59.99/year</p>
-          <a href="">Change</a>
+  <body
+    class="flex flex-col space-y-4 items-center justify-center h-full bg-no-repeat [background-image:url('../assets/images/pattern-background-mobile.svg')] min-[376px]:[background-image:url('../assets/images/pattern-background-desktop.svg')] font-primary pt-4 px-4 bg-pale-blue"
+  >
+    <main
+      class="container mx-auto w-fit max-w-md bg-white rounded-3xl overflow-hidden shadow-xl"
+    >
+      <div class="">
+        <img class="aspect-auto" src="./assets/images/illustration-hero.svg" alt="a person wearing a green shirt listening to music on a phone using a wired headset" />
+      </div>
+
+      <section class="flex flex-col gap-6 sm:gap-9 p-6 sm:p-12 text-center">
+        <div class="space-y-4 px-2">
+          <h1 class="font-black text-heading1 text-dark-blue">Order Summary</h1>
+          <p class="text-basetext font-medium text-desaturated-blue">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
         </div>
-        <button>Proceed to Payment</button>
-        <a href="">Cancel Order</a>
+
+        <div class="flex p-4 max-[320px]:flex-col gap-4 rounded-lg items-center bg-very-pale-blue justify-between">
+          <div class="flex max-[320px]:flex-col gap-5 items-center">
+            <img
+              src="./assets/images/icon-music.svg"
+              alt="icon showing a musical note"
+            />
+            <div class="text-smalltext">
+              <p class="font-black text-dark-blue">Annual Plan</p>
+              <p class="font-medium text-desaturated-blue">$59.99/year</p>
+            </div>
+          </div>
+          <a class="text-bright-blue text-smalltext font-bold underline hover:text-bright-blue/80 hover:no-underline" href="">Change</a>
+        </div>
+
+        <button class="bg-bright-blue shadow-[0px_10px_15px_5px] shadow-[hsl(246,75%,89%)] rounded-lg p-3.5 text-white font-bold text-basetext hover:bg-bright-blue/70">
+          Proceed to Payment
+        </button>
+        <a class="text-desaturated-blue text-basetext font-bold hover:text-dark-blue" href="">Cancel Order</a>
       </section>
     </main>
 
-    <footer class="attribution">
+    <footer class="text-center font-bold text-basetext">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a class="text-bright-blue hover:bg-dark-blue hover:text-very-pale-blue" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a class="text-bright-blue hover:bg-dark-blue hover:text-very-pale-blue" href="#">Fejiro Abere</a>.
     </footer>
   </body>
 </html>
+
