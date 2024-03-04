@@ -601,33 +601,12 @@ video {
   aspect-ratio: auto;
 }
 
+.h-\[220px\] {
+  height: 220px;
+}
+
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-svh {
-  height: 100svh;
-}
-
-.h-lvh {
-  height: 100lvh;
-}
-
-.h-dvh {
-  height: 100dvh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
 }
 
 .w-fit {
@@ -667,22 +646,10 @@ video {
   gap: 1.5rem;
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -751,10 +718,6 @@ video {
   padding-top: 1rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -799,7 +762,7 @@ video {
 
 .text-desaturated-blue {
   --tw-text-opacity: 1;
-  color: hsl(224 23% 55% / var(--tw-text-opacity));
+  color: hsl(224 23% 35% / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -859,6 +822,12 @@ video {
   text-decoration-line: none;
 }
 
+@media (max-width: 400px) {
+  .max-\[400px\]\:h-\[150px\] {
+    height: 150px;
+  }
+}
+
 @media (max-width: 320px) {
   .max-\[320px\]\:flex-col {
     flex-direction: column;
@@ -872,41 +841,11 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
-  .sm\:gap-8 {
-    gap: 2rem;
-  }
-
-  .sm\:gap-10 {
-    gap: 2.5rem;
-  }
-
   .sm\:gap-9 {
     gap: 2.25rem;
   }
 
   .sm\:p-12 {
     padding: 3rem;
-  }
-
-  .sm\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .sm\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .sm\:pb-12 {
-    padding-bottom: 3rem;
-  }
-
-  .sm\:pt-10 {
-    padding-top: 2.5rem;
   }
 }
